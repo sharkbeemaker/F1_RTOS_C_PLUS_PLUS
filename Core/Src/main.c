@@ -28,7 +28,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "RM_Lib.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
