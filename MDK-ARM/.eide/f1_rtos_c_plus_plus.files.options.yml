@@ -15,17 +15,12 @@
 #
 ##########################################################################################
 
-version: '1.0'
-
-#
-# for source files with filesystem paths
-#
-files:
-#   './test/**/*.c': --c99
-
-#
-# for source files with virtual paths
-#
+version: "1.0"
+files: null
 virtualPathFiles:
-#   'virtual_folder/**/*.c': --c99
-
+    <virtual_root>/RM_LIB/RM_Lib.cpp: -xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../MDK-ARM -I ./my_lib -I ./my_taks -I ./RM_LIB -I./RTE/_F1_RTOS_C_PLUS_PLUS -ID:/keil_32/ARM/CMSIS/5.8.0/CMSIS/Core/Include
+        -ID:/keil_32/Keil/STM32F1xx_DFP/2.3.0/Device/Include -D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -o f1_rtos_c_plus_plus/main.o
+    <virtual_root>/Application/User/Core/main.c: -xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../MDK-ARM -I ./my_lib -I ./my_taks -I ./RM_LIB -I./RTE/_F1_RTOS_C_PLUS_PLUS -ID:/keil_32/ARM/CMSIS/5.8.0/CMSIS/Core/Include
+        -ID:/keil_32/Keil/STM32F1xx_DFP/2.3.0/Device/Include -D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -o f1_rtos_c_plus_plus/main.o
+    <virtual_root>/Application/User/Core/freertos.c: -xc++ -std=c++17 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../MDK-ARM -I ./my_lib -I ./my_taks -I ./RM_LIB -I./RTE/_F1_RTOS_C_PLUS_PLUS -ID:/keil_32/ARM/CMSIS/5.8.0/CMSIS/Core/Include
+        -ID:/keil_32/Keil/STM32F1xx_DFP/2.3.0/Device/Include -D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -o f1_rtos_c_plus_plus/main.o
